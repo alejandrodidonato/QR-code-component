@@ -9,18 +9,22 @@ body
 {
     background-color: #d5e1ef;
     font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
-.qr-component
+main
 {
     background-color: #fff;
     width: 20%;
     border-radius: 1rem;
     padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25vh;
-    margin-bottom: 20vh;
+}
+
+.sr-only
+{
+    display: none;
 }
 
 .image-container
@@ -60,7 +64,7 @@ body
 
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {
-    .qr-component
+    main
     {
         width: 40%;
     }
@@ -78,7 +82,7 @@ body
 
 @media all and (min-width: 728px) and (max-width: 1023px) { 
 
-    .qr-component
+    main
     {
         width: 40%;
     }
@@ -92,15 +96,14 @@ body
     {
         font-size: 1.2em;
     }
+
  }
 
- @media all and (min-width: 320px) and (max-width: 727px) { 
+ @media all and (min-width: 300px) and (max-width: 727px) { 
 
-    .qr-component
+    main
     {
         width: 85%;
-        margin-top: 10vh;
-        margin-bottom: 10vh;
     }
 
     .text-container h2
